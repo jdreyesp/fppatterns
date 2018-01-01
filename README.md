@@ -29,8 +29,12 @@ Each of the patterns developed here have the following:
 | *Lenses pattern*  | Abstraction that scales when preserving immutability and wanted to present a decent API to the user: `case class Lens[O,V](get : O => V, set : (O, V) => O)` |
 
 
+### Run the tests
   
+  As it's a Maven based project, you can run the tests as follows:
+  `mvn clean test`
   
 
+Happy Hacking! :smiley:
 
 
