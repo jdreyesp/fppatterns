@@ -26,7 +26,7 @@ Each of the patterns developed here have the following:
 
 | Pattern           | Description (see more detailed descriptions in code) |
 | ----------------- | ------------------------------------------------------- |
-| *Lenses pattern*  | Abstraction that scale updates while preserving immutability and presenting a decent API to the user: `case class Lens[O,V](get : O => V, set : (O, V) => O)` |
+| *Lenses pattern*  | Abstraction that scale updates while preserving immutability and presenting a decent API to the user [[link to pattern]](https://github.com/jdreyesp/fppatterns/blob/master/src/main/scala/com/jdreyesp/examples/fppatterns/lens/Lens.scala) |
 
 
 ### Run the tests
