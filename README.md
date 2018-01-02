@@ -6,7 +6,7 @@ Each of the patterns developed here have the following:
 
 - Scala domain objects to cover the example
 - ScalaTest suite that covers:
-  1. A feature convering the necessity of the pattern. 
+  1. A feature covering the necessity of the pattern. 
      
     ```
      //Pattern necessity
