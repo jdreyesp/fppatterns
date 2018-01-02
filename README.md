@@ -24,9 +24,9 @@ Each of the patterns developed here have the following:
 
 ### List of patterns:
 
-| Pattern           | Description |
+| Pattern           | Description (see more detailed descriptions in code) |
 | ----------------- | ------------------------------------------------------- |
-| *Lenses pattern*  | Abstraction that scales when preserving immutability and wanted to present a decent API to the user: `case class Lens[O,V](get : O => V, set : (O, V) => O)` |
+| *Lenses pattern*  | Abstraction that scale updates while preserving immutability and presenting a decent API to the user: `case class Lens[O,V](get : O => V, set : (O, V) => O)` |
 
 
 ### Run the tests

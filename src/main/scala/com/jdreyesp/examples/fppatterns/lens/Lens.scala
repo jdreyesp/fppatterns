@@ -3,6 +3,14 @@ package com.jdreyesp.examples.fppatterns.lens
 /**
   * Created by jreyes on 1/1/18.
   *
+  * Suppose you want to update a domain object and preserve immutability, so you have to copy it.
+  * The best way to achieve it is by using 'copy' case class out of the box method.
+  * Although this is a good approach, it's an elegant solution only if you have simple objects. We'll soon face that
+  * this is not the best solution if you want it to scale properly, for example, when you have composition objects, like this:
+  *  @see com.jdreyesp.examples.fppatterns.lens.Customer.Customer
+  *
+  * As you can see, Customer has-an Address, and we'll get struggled with nested copies to create a new Customer object.
+  *
     The requirements of the algebra that such an abstraction (the Lens pattern) need to satisfy:
 
     Parametricity—The lens needs to be parametric on the type of the object (let’s call it O) that you need to update.
@@ -25,6 +33,8 @@ case class Lens[O,V](get : O => V, set : (O, V) => O)
 object Lens {
 
   /**
+    * Check out `com.jdreyesp.examples.fppatterns.lens.LensSuite` first to understand compose method.
+    *
     * We’ll define a generic compose function so that we don’t have to repeat the same code
     * for every pair of lenses that we compose.
     * Compose takes two lenses and a value, with the types of the lenses aligned for composition.

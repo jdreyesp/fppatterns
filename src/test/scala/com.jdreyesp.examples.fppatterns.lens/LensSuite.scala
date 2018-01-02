@@ -61,7 +61,7 @@ class LensSuite extends FeatureSpec with Matchers with GivenWhenThen {
       newAddress shouldBe Address("B-56", "Monroe Street", "Denver", "CO", "80231")
     }
 
-    scenario("Using Lens Pattern with Customer (compound object)") {
+    scenario("Using Lens Pattern with Customer (composing object)") {
 
       Given("A lens for Adddress field in Customer")
       //In this case we use a composition pattern that helps us to compose two lenses.
