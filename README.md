@@ -21,6 +21,8 @@ Each of the patterns developed here have the following:
   
     ```
 
+**Note:** In order to understand the patterns and see the use cases, I recommend to read not only the pattern code, 
+but the domain classes and the tests (and execute them).
 
 ### List of patterns:
 
