@@ -1,9 +1,8 @@
-package reader
+package com.jdreyesp.examples.fppatterns.reader
 
 import java.util.Calendar
 
 import com.jdreyesp.examples.fppatterns.reader.repository.AccountRepositoryOracleDB
-import com.jdreyesp.examples.fppatterns.reader.{Account, AccountService, AccountServiceWithoutPattern}
 import org.scalatest.{FeatureSpec, GivenWhenThen, Matchers}
 
 import scala.util.{Success, Try}

@@ -1,6 +1,6 @@
 # Functional programming common patterns
 
-This project shows the most common functional programming patterns in Scala 2.12.
+This project shows the most common functional programming patterns, written in Scala 2.12.
 
 Each of the patterns developed here have the following:
 
