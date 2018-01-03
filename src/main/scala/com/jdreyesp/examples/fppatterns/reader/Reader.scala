@@ -12,13 +12,13 @@ package com.jdreyesp.examples.fppatterns.reader
   *
   * Reader can have a transformer, ReaderT, which can be used to compose other monads with the Reader (not covered here)
   */
-case class Reader[R, A](run: R => A) {
+case class Reader[R, A](apply: R => A) {
 
   def map[B](f: A => B): Reader[R, B] =
-    Reader(r => f(run(r)))
+    Reader(r => f(apply(r)))
 
   def flatMap[B](f: A => Reader[R, B]): Reader[R, B] =
-    Reader(r => f(run(r)).run(r))
+    Reader(r => f(apply(r)).apply(r))
 
 }
 

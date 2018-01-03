@@ -39,7 +39,7 @@ class ReaderSuite extends FeatureSpec with Matchers with GivenWhenThen {
       val accountId = "1A2B3C"
 
       When("A debit operation is executed in that account")
-      val newAccount : Try[Account] = AccountService.complexOperation(accountId).run(accountRepository)
+      val newAccount : Try[Account] = AccountService.complexOperation(accountId).apply(accountRepository)
 
       Then("A new account is returned with the new Balance")
       newAccount.isSuccess shouldBe (true)
