@@ -24,9 +24,10 @@ Each of the patterns developed here have the following:
 
 ### List of patterns:
 
-| Pattern           | Description (see more detailed descriptions in code) |
-| ----------------- | ------------------------------------------------------- |
-| *Lenses pattern*  | Abstraction that scale updates while preserving immutability and presenting a decent API to the user [[link to pattern]](https://github.com/jdreyesp/fppatterns/blob/master/src/main/scala/com/jdreyesp/examples/fppatterns/lens/Lens.scala) |
+| Pattern               | Description (see more detailed descriptions in code) |
+| --------------------- | ------------------------------------------------------- |
+| *Lenses abstraction*  | Abstraction that scale updates while preserving immutability and presenting a decent API to the user [[link to pattern]](https://github.com/jdreyesp/fppatterns/blob/master/src/main/scala/com/jdreyesp/examples/fppatterns/lens/Lens.scala) |
+| *Reader abstraction*  | Abstraction monad that decouples reading from environment and/or dependency injection. For example, it can be used to inject a repository into a service without using the repository as a constructor parameter [[link to pattern]](https://github.com/jdreyesp/fppatterns/blob/master/src/main/scala/com/jdreyesp/examples/fppatterns/reader/Reader.scala) | 
 
 
 ### Run the tests

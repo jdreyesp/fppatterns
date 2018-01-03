@@ -1,4 +1,5 @@
-import com.jdreyesp.examples.fppatterns.lens.Lens
+package com.jdreyesp.examples.fppatterns.lens
+
 import org.scalatest.{FeatureSpec, GivenWhenThen, Matchers}
 
 class LensSuite extends FeatureSpec with Matchers with GivenWhenThen {

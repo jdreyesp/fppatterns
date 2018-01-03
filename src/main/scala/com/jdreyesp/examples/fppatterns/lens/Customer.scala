@@ -1,3 +1,4 @@
+package com.jdreyesp.examples.fppatterns.lens
 
 case class Customer(id: Int, name: String, address: Address)
 
