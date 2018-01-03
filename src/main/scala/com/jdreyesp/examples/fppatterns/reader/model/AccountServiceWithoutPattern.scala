@@ -1,8 +1,8 @@
-package com.jdreyesp.examples.fppatterns.reader
+package com.jdreyesp.examples.fppatterns.reader.model
 
 import java.util.Calendar
 
-import com.jdreyesp.examples.fppatterns.reader.Amount.Amount
+import com.jdreyesp.examples.fppatterns.reader.model.Amount.Amount
 import com.jdreyesp.examples.fppatterns.reader.repository.AccountRepository
 
 import scala.util.{Failure, Success, Try}

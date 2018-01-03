@@ -2,6 +2,7 @@ package com.jdreyesp.examples.fppatterns.reader
 
 import java.util.Calendar
 
+import com.jdreyesp.examples.fppatterns.reader.model.{Account, AccountService, AccountServiceWithoutPattern}
 import com.jdreyesp.examples.fppatterns.reader.repository.AccountRepositoryOracleDB
 import org.scalatest.{FeatureSpec, GivenWhenThen, Matchers}
 
@@ -27,7 +28,7 @@ class ReaderSuite extends FeatureSpec with Matchers with GivenWhenThen {
 
       Then("A new account is returned with the new Balance")
       newAccount.isSuccess should be (true)
-      newAccount.map(acc => acc.balance.amount) should be (Success(0))
+      newAccount.map(acc => acc.balance.amount) shouldBe (Success(0))
     }
   }
 
@@ -41,8 +42,8 @@ class ReaderSuite extends FeatureSpec with Matchers with GivenWhenThen {
       val newAccount : Try[Account] = AccountService.complexOperation(accountId).run(accountRepository)
 
       Then("A new account is returned with the new Balance")
-      newAccount.isSuccess should be (true)
-      newAccount.map(acc => acc.balance.amount) should be (Success(0))
+      newAccount.isSuccess shouldBe (true)
+      newAccount.map(acc => acc.balance.amount) shouldBe (Success(0))
     }
   }
 

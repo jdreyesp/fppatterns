@@ -2,7 +2,7 @@ package com.jdreyesp.examples.fppatterns.reader.repository
 
 import java.util.Calendar
 
-import com.jdreyesp.examples.fppatterns.reader.{Account, Balance}
+import com.jdreyesp.examples.fppatterns.reader.model.{Account, Balance}
 
 import scala.util.{Success, Try}
 

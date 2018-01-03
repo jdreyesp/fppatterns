@@ -1,6 +1,6 @@
 package com.jdreyesp.examples.fppatterns.reader.repository
 
-import com.jdreyesp.examples.fppatterns.reader.Account
+import com.jdreyesp.examples.fppatterns.reader.model.Account
 
 import scala.util.Try
 

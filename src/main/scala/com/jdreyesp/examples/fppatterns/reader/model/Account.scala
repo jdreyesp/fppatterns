@@ -1,8 +1,8 @@
-package com.jdreyesp.examples.fppatterns.reader
+package com.jdreyesp.examples.fppatterns.reader.model
 
 import java.util.Date
 
-import com.jdreyesp.examples.fppatterns.reader.Amount.Amount
+import com.jdreyesp.examples.fppatterns.reader.model.Amount.Amount
 
 /**
   * Created by jreyes on 2/1/18.
